@@ -22,6 +22,7 @@
     </properties>
 
     <modules>
+        <module>../gateway</module>
         <module>../sso-service</module>
         <module>../order-service</module>
         <module>../customer</module>

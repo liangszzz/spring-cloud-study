@@ -36,6 +36,5 @@
             <version>${spring-cloud-alibaba.version}</version>
         </dependency>
 
-
     </dependencies>
 </project>

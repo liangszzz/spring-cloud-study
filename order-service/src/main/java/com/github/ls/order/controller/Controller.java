@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @Value("${abc:}")
-    private String abb;
+    private String abc;
 
     @GetMapping("/index")
     public String index() {
-        return "hello " + abb;
+        return "hello " + abc;
     }
 }
