@@ -8,13 +8,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 
-
 @EnableDiscoveryClient
 @SpringBootApplication
-public class Application {
+public class CustomerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(CustomerApplication.class, args);
     }
 
 
