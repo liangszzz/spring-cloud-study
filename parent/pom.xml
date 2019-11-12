@@ -26,6 +26,7 @@
         <module>../sso-service</module>
         <module>../order-service</module>
         <module>../customer</module>
+        <module>../rocketmq</module>
     </modules>
 
     <dependencies>
