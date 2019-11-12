@@ -10,11 +10,17 @@ import org.springframework.stereotype.Service;
 @Service
 public class RocketmqProducer {
 
+    DefaultMQProducer producer = new DefaultMQProducer("please_rename_unique_group_name_4");
+
     public void send(String message) throws MQClientException, RemotingException, InterruptedException, MQBrokerException {
-        DefaultMQProducer producer = new DefaultMQProducer("test_producer_group");
-        producer.setNamesrvAddr("192.168.202.129:9876");
-        producer.start();
-        Message msg = new Message("test-topic", "test-tag", message.getBytes());
+        producer.setNamesrvAddr("localhost:9876");
+        try {
+            producer.start();
+        }
+        catch (Exception e){
+
+        }
+        Message msg = new Message("TopicCreate1", "TagB", message.getBytes());
         producer.send(msg);
     }
 
