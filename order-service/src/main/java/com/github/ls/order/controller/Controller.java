@@ -9,11 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
-    @Value("${server.port}")
-    private String port;
-
     @GetMapping("/index")
     public String index() {
-        return "hello " + port;
+        return "hello ";
     }
 }
